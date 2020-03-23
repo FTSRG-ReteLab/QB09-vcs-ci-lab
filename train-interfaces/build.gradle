@@ -1,2 +1,3 @@
 dependencies {
+    apply plugin: 'org.sonarqube'
 }

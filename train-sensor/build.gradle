@@ -1,4 +1,6 @@
 dependencies {
+    apply plugin: 'org.sonarqube'
+
     compile project(':train-interfaces')
     compile project(':train-user')
 
