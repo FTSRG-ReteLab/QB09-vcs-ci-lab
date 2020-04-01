@@ -8,6 +8,9 @@ import hu.bme.mit.train.interfaces.TrainUser;
 
 public class TrainUserImpl implements TrainUser {
 
+	private TrainController controller;
+	private int joystickPosition;
+	
 	Timer updateTimer = new Timer();
 	private TimerTask updateTask = new TimerTask() {
 		@Override
@@ -19,9 +22,6 @@ public class TrainUserImpl implements TrainUser {
 			controller.setJoystickPosition(joystickPosition);
 		}
 	};
-	
-	private TrainController controller;
-	private int joystickPosition;
 
 	public TrainUserImpl(TrainController controller) {
 		this.controller = controller;
