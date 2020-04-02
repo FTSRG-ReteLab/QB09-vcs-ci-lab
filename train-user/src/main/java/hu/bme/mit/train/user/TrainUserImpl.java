@@ -10,6 +10,7 @@ public class TrainUserImpl implements TrainUser {
 
 	private TrainController controller;
 	private int joystickPosition;
+	private boolean alarmState = false;
 	
 	Timer updateTimer = new Timer();
 	private TimerTask updateTask = new TimerTask() {
@@ -48,4 +49,15 @@ public class TrainUserImpl implements TrainUser {
 		return true       ; //van itt valami valtozas :O
 	}
 
+	@Override
+	public void setAlarmState(boolean alarmSate) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean getAlarmSate() {
+		// TODO Auto-generated method stub
+		return false;
+	}	
 }
